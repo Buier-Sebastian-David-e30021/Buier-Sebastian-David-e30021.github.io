@@ -3,85 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AUTODOC</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>AUTODOC - Piese Auto Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">AUTODOC</div>
-            <input type="text" placeholder="Introduceți numărul sau denumirea piesei" class="search-bar">
-            <button class="search-btn">Caută</button>
-            <div class="nav-links">
-                <a href="#">Piese auto</a>
-                <a href="#">Camion</a>
-                <a href="#">Motocicleta</a>
-                <a href="#">Anvelope</a>
-                <a href="#">Scule</a>
-                <a href="#">Accesorii auto</a>
-                <a href="#">Ulei de motor</a>
-                <a href="#">Filtre</a>
-                <a href="#">Sistem de franare</a>
-                <a href="#">E-mobilitate</a>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="plus-badge">PLUS</span>
+                <a href="#" class="premium-link">Testați contul premium</a>
             </div>
-        </nav>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="main-header-content">
+                <a href="#" class="logo">
+                    <i class="fas fa-plus-square logo-icon"></i>
+                    AUTODOC
+                </a>
+                <div class="user-menu">
+                    <a href="#" class="garage-btn">
+                        <i class="fas fa-warehouse"></i>
+                        <span>Garajul meu</span>
+                        <span class="notification-badge">1</span>
+                    </a>
+                    <a href="#" class="user-account-btn">
+                        <i class="fas fa-user-circle"></i>
+                        <span>AUTODOC-ul meu</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
-    <main>
-        <section class="selection">
-            <h2 class="fade-in">Selectați modelul automobilului dumneavoastră pentru a căuta piesele</h2>
-            <div class="steps">
-                <div class="step-item slide-in-left">
-                    <label>1. Selectați marca</label>
-                    <select>
-                        <option value="">Selectați marca</option>
-                    </select>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="category-dropdown">
+                    <button class="dropdown-btn">
+                        <i class="fas fa-car"></i>
+                        <span>Piese auto</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
-                <div class="step-item slide-in-left">
-                    <label>2. Selectați modelul</label>
-                    <select>
-                        <option value="">Selectați modelul</option>
-                    </select>
+                <div class="search-input-container">
+                    <input type="text" class="search-input" placeholder="Introduceți numărul sau denumirea piesei">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                        CAUTĂ
+                    </button>
                 </div>
-                <div class="step-item slide-in-left">
-                    <label>3. Selectați motorul</label>
-                    <select>
-                        <option value="">Selectați motorul</option>
-                    </select>
-                </div>
-                <button class="search-btn fade-in">Caută</button>
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">0</span>
+                    <span class="cart-price">0,00 RON</span>
+                </button>
             </div>
-            <p class="fade-in">NU VA PUTEȚI GĂSI AUTOMOBILUL ÎN CATALOG?</p>
-        </section>
-        <section class="catalog">
-            <h2 class="fade-in">GĂSEȘTE PIESE AUTO ÎN CATALOGUL AUTODOC</h2>
-            <div class="items">
-                <div class="item scale-up">
-                    <img src="https://via.placeholder.com/100" alt="Anvelope">
-                    <p>Anvelope</p>
+        </div>
+    </section>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+        <div class="container">
+            <div class="nav-list">
+                <a href="#" class="nav-item">
+                    <i class="fas fa-truck nav-icon"></i>
+                    <span>Camion</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-motorcycle nav-icon"></i>
+                    <span>Motocicletă</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-car-side nav-icon"></i>
+                    <span>Anvelope</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-tools nav-icon"></i>
+                    <span>Scule</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-oil-can nav-icon"></i>
+                    <span>Accesorii auto</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-cogs nav-icon"></i>
+                    <span>Ulei de motor</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-filter nav-icon"></i>
+                    <span>Filtre</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-brake-system nav-icon"></i>
+                    <span>Sistem de frânare</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-bolt nav-icon"></i>
+                    <span>E-mobilitate</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="search-form">
+                <h2 class="form-title">Selectați modelul automobilului dumneavoastră pentru căutarea pieselor auto</h2>
+                <div class="form-group">
+                    <div class="select-wrapper">
+                        <span class="step-number">1</span>
+                        <select class="form-select">
+                            <option>Selectați marca</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="item scale-up">
-                    <img src="https://via.placeholder.com/100" alt="Sistem de franare">
-                    <p>Sistem de franare</p>
+                <div class="form-group">
+                    <div class="select-wrapper">
+                        <span class="step-number">2</span>
+                        <select class="form-select">
+                            <option>Selectați modelul</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="item scale-up">
-                    <img src="https://via.placeholder.com/100" alt="Amortizare">
-                    <p>Amortizare</p>
+                <div class="form-group">
+                    <div class="select-wrapper">
+                        <span class="step-number">3</span>
+                        <select class="form-select">
+                            <option>Selectați motorul</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="item scale-up">
-                    <img src="https://via.placeholder.com/100" alt="Uleiuri și lichide">
-                    <p>Uleiuri și lichide</p>
+                <button class="search-submit-btn">Căutare</button>
+                <a href="#" class="not-found-link">NU VĂ PUTEȚI GĂSI AUTOMOBILUL ÎN CATALOG?</a>
+            </div>
+
+            <div class="promo-banner">
+                <div class="promo-content">
+                    <h3 class="promo-title">Obține un cupon de</h3>
+                    <p class="promo-subtitle">10 RON</p>
+                    <p class="promo-text">atunci când te abonezi la newsletterul nostru!</p>
+                    <a href="#" class="promo-btn">ABONEAZĂ-TE ACUM</a>
                 </div>
-                <div class="item scale-up">
-                    <img src="https://via.placeholder.com/100" alt="Filtre">
-                    <p>Filtre</p>
-                </div>
-                <div class="item scale-up">
-                    <img src="https://via.placeholder.com/100" alt="Suspensie, tijă">
-                    <p>Suspensie, tijă</p>
+                <div class="promo-image">
+                    <img src="/api/placeholder/300/200" alt="Newsletter promo">
                 </div>
             </div>
-        </section>
+
+            <section class="category-section">
+                <h2 class="section-title">GĂSEȘTE PIESE AUTO ÎN CATALOGUL AUTODOC</h2>
+                <div class="category-grid">
+                    <a href="#" class="category-card">
+                        <div class="category-img">
+                            <img src="/api/placeholder/120/120" alt="Anvelope">
+                        </div>
+                        <h3 class="category-name">
+                            Anvelopa
+                            <span class="category-indicator"></span>
+                        </h3>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-img">
+                            <img src="/api/placeholder/120/120" alt="Sistem de frânare">
+                        </div>
+                        <h3 class="category-name">
+                            Sistem de frânare
+                            <span class="category-indicator"></span>
+                        </h3>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-img">
+                            <img src="/api/placeholder/120/120" alt="Amortizare">
+                        </div>
+                        <h3 class="category-name">
+                            Amortizare
+                            <span class="category-indicator"></span>
+                        </h3>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-img">
+                            <img src="/api/placeholder/120/120" alt="Uleiuri și lichide">
+                        </div>
+                        <h3 class="category-name">
+                            Uleiuri și lichide
+                            <span class="category-indicator"></span>
+                        </h3>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-img">
+                            <img src="/api/placeholder/120/120" alt="Filtre">
+                        </div>
+                        <h3 class="category-name">
+                            Filtre
+                            <span class="category-indicator"></span>
+                        </h3>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-img">
+                            <img src="/api/placeholder/120/120" alt="Suspensie, țije">
+                        </div>
+                        <h3 class="category-name">
+                            Suspensie, țije
+                            <span class="category-indicator"></span>
+                        </h3>
+                    </a>
+                </div>
+            </section>
+        </div>
     </main>
+
+    <script>
+        // Script pentru a activa animațiile la scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obține toate cardurile de categorii
+            const cards = document.querySelectorAll('.category-card');
+            
+            // Adaugă un delay pentru fiecare card pentru a crea un efect de cascadă
+            cards.forEach((card, index) => {
+                card.style.animationDelay = ${index * 0.1}s;
+            });
+            
+            // Adaugă funcționalitate de hover pentru elementele de navigație
+            const navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.querySelector('.nav-icon').style.animation = 'pulse 0.5s ease';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.querySelector('.nav-icon').style.animation = '';
+                });
+            });
+            
+            // Adaugă funcționalitate pentru dropdown 
+            const dropdownBtn = document.querySelector('.dropdown-btn');
+            dropdownBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+            });
+            
+            // Funcționalitate pentru butonul de căutare
+            const searchBtn = document.querySelector('.search-btn');
+            searchBtn.addEventListener('click', function() {
+                this.style.animation = 'pulse 0.5s ease';
+                setTimeout(() => {
+                    this.style.animation = '';
+                }, 500);
+            });
+        });
+    </script>
 </body>
 </html>

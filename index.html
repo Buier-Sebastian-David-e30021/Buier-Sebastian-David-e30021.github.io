@@ -17,6 +17,7 @@
             background: linear-gradient(135deg, #0f1923 0%, #1a2a38 100%);
             color: #e0e0e0;
             line-height: 1.6;
+            overflow-x: hidden;
         }
         
         .container {
@@ -746,17 +747,182 @@
             </div>
         </section>
         
-        <!-- Performance Section -->
-        <section id="performance" class="performance-section">
-            <h2 class="section-title">Performance Analysis</h2>
+      <!-- Performance Section -->
+<section id="performance" class="performance-section">
+    <h2 class="section-title">Performance Analysis</h2>
+    
+    <div class="performance-charts">
+        <div class="chart-container" style="display: flex; justify-content: center; align-items: center; overflow: hidden;">
+            <img src="/api/placeholder/550/300" alt="Power & Torque Curve" style="width: 100%; height: auto; border-radius: 6px;">
+        </div>
+        <div class="chart-container" style="display: flex; justify-content: center; align-items: center; overflow: hidden;">
+            <img src="/api/placeholder/550/300" alt="Fuel Consumption Data" style="width: 100%; height: auto; border-radius: 6px;">
+        </div>
+    </div>
+    
+    <div class="performance-details" style="margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <div class="spec-card">
+            <h3>Acceleration Analysis</h3>
+            <p style="color: #cccccc; margin-bottom: 15px;">The C 200 CDI delivers respectable performance for a diesel-powered sedan with a 0-62 mph time of 10.4 seconds. While not built for outright speed, the car offers excellent everyday drivability thanks to its substantial torque output of 270 Nm available from just 1600 rpm.</p>
+            <div class="spec-item">
+                <span class="spec-name">0-62 mph (0-100 km/h)</span>
+                <span class="spec-value">10.4 seconds</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-name">50-75 mph (80-120 km/h)</span>
+                <span class="spec-value">10.8 seconds</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-name">Quarter mile</span>
+                <span class="spec-value">17.6 seconds</span>
+            </div>
+        </div>
+        
+        <div class="spec-card">
+            <h3>Efficiency Focus</h3>
+            <p style="color: #cccccc; margin-bottom: 15px;">The Mercedes C 200 CDI strikes an excellent balance between performance and efficiency. The 2.2-liter turbocharged diesel engine delivers impressive fuel economy figures, especially on highway journeys where it can achieve over 44 mpg (5.3 l/100km).</p>
+            <div class="spec-item">
+                <span class="spec-name">Fuel tank range (highway)</span>
+                <span class="spec-value">~800 miles (1300 km)</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-name">CO₂ efficiency rating</span>
+                <span class="spec-value">B</span>
+            </div>
+        </div>
+    </div>
+</section>
+        
+        <!-- Car Dimensions Section -->
+        <section class="specs-section">
+            <h2 class="section-title">Car Dimensions</h2>
             
-            <div class="performance-charts">
-                <div class="chart-container">
-                    <canvas id="powerChart"></canvas>
+            <div style="display: flex; margin-bottom: 40px;">
+                <div style="flex: 1; display: flex; justify-content: center; align-items: center; background: rgba(255,255,255,0.05); border-radius: 8px; padding: 20px;">
+                    <img src="/api/placeholder/600/300" alt="Mercedes C-Class Dimensions" style="max-width: 100%; height: auto;">
                 </div>
-                <div class="chart-container">
-                    <canvas id="fuelChart"></canvas>
+            </div>
+            
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h3>Exterior Dimensions</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">Length</span>
+                        <span class="spec-value">4581 mm (180.4 in.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Width</span>
+                        <span class="spec-value">1770 mm (69.7 in.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Height</span>
+                        <span class="spec-value">1447 mm (57.0 in.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Wheelbase</span>
+                        <span class="spec-value">2760 mm (108.7 in.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Ground clearance</span>
+                        <span class="spec-value">142 mm (5.6 in.)</span>
+                    </div>
                 </div>
+                
+                <div class="spec-card">
+                    <h3>Interior Dimensions</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">Headroom (front)</span>
+                        <span class="spec-value">983 mm (38.7 in.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Headroom (rear)</span>
+                        <span class="spec-value">942 mm (37.1 in.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Legroom (front)</span>
+                        <span class="spec-value">1056 mm (41.6 in.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Legroom (rear)</span>
+                        <span class="spec-value">890 mm (35.0 in.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Shoulder room (front)</span>
+                        <span class="spec-value">1390 mm (54.7 in.)</span>
+                    </div>
+                </div>
+                
+                <div class="spec-card">
+                    <h3>Weights & Capacities</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">Curb weight</span>
+                        <span class="spec-value">1630 kg (3594 lbs)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Gross weight</span>
+                        <span class="spec-value">2130 kg (4696 lbs)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Trunk capacity</span>
+                        <span class="spec-value">475 l (16.8 cu. ft.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Fuel tank</span>
+                        <span class="spec-value">66 l (17.4 US gal)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Max. towing capacity</span>
+                        <span class="spec-value">1800 kg (3968 lbs)</span>
+                    </div>
+                </div>
+                
+                <div class="spec-card">
+                    <h3>Aerodynamics & Track</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">Drag coefficient</span>
+                        <span class="spec-value">0.27 Cd</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Front track</span>
+                        <span class="spec-value">1533 mm (60.4 in.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Rear track</span>
+                        <span class="spec-value">1521 mm (59.9 in.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Turning circle</span>
+                        <span class="spec-value">10.8 m (35.4 ft)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About The Car Section -->
+        <section class="specs-section">
+            <h2 class="section-title">About The Mercedes C 200 CDI</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 40px;">
+                <div style="background: rgba(255,255,255,0.05); border-radius: 8px; padding: 20px;">
+                    <img src="/api/placeholder/500/300" alt="Mercedes C-Class Driving" style="width: 100%; border-radius: 6px; margin-bottom: 15px;">
+                    <h3 style="color: #00a8ff; margin-bottom: 10px;">German Engineering Excellence</h3>
+                    <p style="color: #cccccc;">The W204 generation of the Mercedes-Benz C-Class represented a significant leap forward in the compact executive sedan segment. Launched in 2007, this model featured more dynamic styling, improved build quality, and enhanced driving dynamics compared to its predecessor.</p>
+                </div>
+                
+                <div style="background: rgba(255,255,255,0.05); border-radius: 8px; padding: 20px;">
+                    <img src="/api/placeholder/500/300" alt="Mercedes C-Class Interior" style="width: 100%; border-radius: 6px; margin-bottom: 15px;">
+                    <h3 style="color: #00a8ff; margin-bottom: 10px;">Premium Interior Experience</h3>
+                    <p style="color: #cccccc;">The interior of the C-Class W204 features high-quality materials throughout, with intuitive controls and excellent ergonomics. The cabin design draws inspiration from the flagship S-Class, bringing luxury amenities and technologies to the compact executive segment.</p>
+                </div>
+            </div>
+            
+            <div class="spec-card" style="margin-bottom: 40px;">
+                <h3>The C 200 CDI Model</h3>
+                <p style="color: #cccccc; margin-bottom: 20px;">The C 200 CDI variant features Mercedes-Benz's reliable 2.2-liter four-cylinder turbodiesel engine, which balances performance and efficiency. With 136 horsepower and 270 Nm of torque, this powerplant provides adequate acceleration and excellent fuel economy. The engine is paired with a smooth-shifting 6-speed manual transmission, directing power to the rear wheels in true Mercedes fashion.</p>
+                
+                <p style="color: #cccccc; margin-bottom: 20px;">Known for its solid build quality and refined road manners, the C 200 CDI offers excellent long-distance comfort combined with respectable handling. The suspension setup strikes a good balance between comfort and control, soaking up road imperfections while maintaining composure through corners.</p>
+                
+                <p style="color: #cccccc;">Standard equipment on the C 200 CDI includes climate control, partial power seats, and Mercedes' audio system. Safety features were class-leading at the time, with multiple airbags, electronic stability control, and Mercedes' Pre-Safe system available. The C 200 CDI represents an excellent entry point into Mercedes-Benz ownership, offering the brand's renowned quality and prestige in an efficient and practical package.</p>
             </div>
         </section>
     </div>
@@ -798,7 +964,7 @@
             evt.currentTarget.className += " active";
         }
         
-        // Charts
+                    // Charts
         document.addEventListener('DOMContentLoaded', function() {
             // Power and torque chart
             const powerChartCtx = document.getElementById('powerChart').getContext('2d');
@@ -842,4 +1008,122 @@
                         legend: {
                             labels: {
                                 color: '#e0e0e0'
-                            }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Engine Speed (RPM)',
+                                color: '#e0e0e0'
+                            },
+                            ticks: {
+                                color: '#e0e0e0'
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Output',
+                                color: '#e0e0e0'
+                            },
+                            ticks: {
+                                color: '#e0e0e0'
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)'
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Fuel consumption chart
+            const fuelChartCtx = document.getElementById('fuelChart').getContext('2d');
+            const fuelChart = new Chart(fuelChartCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Urban', 'Extra Urban', 'Combined'],
+                    datasets: [{
+                        label: 'Fuel Consumption (l/100km)',
+                        data: [8.8, 5.2, 6.5],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.5)',
+                            'rgba(75, 192, 192, 0.5)',
+                            'rgba(255, 159, 64, 0.5)'
+                        ],
+                        borderColor: [
+                            'rgb(255, 99, 132)',
+                            'rgb(75, 192, 192)',
+                            'rgb(255, 159, 64)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Fuel Consumption (NEDC)',
+                            color: '#e0e0e0',
+                            font: {
+                                size: 16
+                            }
+                        },
+                        legend: {
+                            labels: {
+                                color: '#e0e0e0'
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            ticks: {
+                                color: '#e0e0e0'
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'l/100km',
+                                color: '#e0e0e0'
+                            },
+                            ticks: {
+                                color: '#e0e0e0'
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)'
+                            }
+                        }
+                    }
+                }
+            });
+        });
+        
+        // Add animations for scroll
+        const elements = document.querySelectorAll('.spec-card, .gallery-item');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        elements.forEach(element => {
+            element.style.opacity = 0;
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(element);
+        });
+    </script>

@@ -111,7 +111,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to top, rgba(137,7,7,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.1) 100%);
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.1) 100%);
         }
         
         .hero-content {
@@ -441,13 +441,47 @@
     
     <div class="container">
         <!-- Hero Section -->
-        <div class="hero">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1>2007 Mercedes-Benz C-Class W204 C 200 CDI</h1>
-                <p>136 horsepower of diesel efficiency combined with premium German engineering</p>
-            </div>
-        </div>
+        <head>
+    <!-- Alte elemente head -->
+    <style>
+        .hero {
+            position: relative;
+            padding: 80px 20px;
+            background-image: url('images/Up Main Picture.png')
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            color: white;
+            overflow: hidden;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero p {
+            font-size: 18px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
         
         <!-- Specs Section -->
         <section id="specs" class="specs-section">

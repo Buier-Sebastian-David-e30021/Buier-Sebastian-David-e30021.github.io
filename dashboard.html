@@ -329,7 +329,7 @@
         }
         
         .stat-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba255, 255, 255, 0.05);
             border-radius: 8px;
             padding: 20px;
             text-align: center;
@@ -702,4 +702,27 @@
                     <p><strong>Last backup:</strong> Today, 3:00 AM</p>
                 </div>
             </div>
-        </section
+        </section>
+    </div>
+    
+    <script>
+        function switchSection(event, sectionId) {
+            // Remove active class from all nav buttons
+            document.querySelectorAll('.nav-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Add active class to clicked button
+            event.currentTarget.classList.add('active');
+            
+            // Remove active class from all sections
+            document.querySelectorAll('.dashboard-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Add active class to selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
